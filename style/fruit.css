@@ -56,6 +56,19 @@ nav a {
     width: 30px;
     height: 30px; 
 }
+.checkbtn{
+    font-size: 30px;
+    color:#F85559;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+ #check{
+    display: none;
+ }
+
 /* nav bar related style end */
 
 /* footer */
@@ -63,8 +76,82 @@ nav a {
 
     color: #FFF;
     text-align: center;
-  margin-top: 20px;
+    margin-top: 20px;
     font-size: 30px;
     font-weight: 400;
 
+}
+
+
+
+@media screen and (max-width: 576px)  {
+
+    .checkbtn{
+        display:inline;
+        color: #FFF;
+    }
+    .search{
+        display: none;
+    }
+    .search-icon{
+        display :none;
+    }
+
+    nav > ul {
+        display:none;
+    }
+    nav li {
+        display:none
+    }
+    nav a {
+        dispaly:none;
+    
+    }
+    .nav img{
+        margin-right:10px;
+    }
+    .nav{
+        
+        width: 100%;
+        margin: 0px;
+     margin-top: 0px; 
+      border-radius: 0px;
+      padding: 0;
+    }
+    .nav-title {
+        display:block;
+        margin-left: 0;
+        text-align: left;
+        
+    }
+    .fruit-content{
+        display: hidden;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width: 960px) {
+
+    .nav{
+        display: inline;
+        width: 100%;
+        margin: 0px;
+     margin-top: 0px; 
+      border-radius: 0px;
+    }
+    .search{
+        display: none;
+    }
+    .nav img{
+        margin-right:0px;
+    }
+    .nav-title {
+        display:block;
+        margin-left: -100px;
+        text-align:right;
+        
+    }
+    .search-icon{
+        display :none;
+    }
 }
